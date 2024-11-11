@@ -1,21 +1,15 @@
 <?php
 
+use Illuminate\Foundation\Bootstrap\LoadConfiguration;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get("/test",function(){
-    $letter = "n";
-    $result = match ($letter){
-        "n" => "nihat",
-        "f" => "ferid",
-        default => "unkown"
-    };
-
-    return $result;
-});
+// Route::get("/test",function(){
+//     $x = config("appSettings");
+// });
 
 
 
